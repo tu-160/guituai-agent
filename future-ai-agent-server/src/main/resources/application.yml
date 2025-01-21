@@ -1,0 +1,46 @@
+# 应用服务器
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 30061
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 101MB
+      max-request-size: 106MB
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    # 开启在线日志查看功能
+    logfile:
+      enabled: true
+
+# 是否需要开启队列
+enable:
+  queue: true
+
+## AI能力调用地址
+#ai:
+#  agent:
+#    host:
+#      url: http://172.20.200.199:9380
+
+# AI能力调用地址
+ai:
+  agent:
+    reasoning: ${ai.reasoning.host}
+    host:
+      url: ${ai.server.host}
+#      url: http://192.168.17.9:9380
+# 放行，不校验会话
+gateway:
+  whiteUrl:
+    - "/api/v1/open/**"
+    - "/open/**"

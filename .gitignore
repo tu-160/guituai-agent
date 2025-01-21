@@ -1,0 +1,15 @@
+
+.idea
+*.iml
+
+.git
+
+.classpath
+.project
+.settings
+target
+
+*.class
+
+*.log
+*.log.*

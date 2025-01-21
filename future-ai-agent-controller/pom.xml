@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>future-ai-agent</artifactId>
+        <groupId>com.future</groupId>
+        <version>4.2.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>future-ai-agent-controller</artifactId>
+
+    <dependencies>
+        <!--导入aop-->
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-common-springaop</artifactId>
+            <version>${future.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-ai-agent-biz</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-ai-agent-api</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-ai-agent-openface</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-oauth-api</artifactId>
+            <version>${future.cloud.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-permission-api</artifactId>
+            <version>${future.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-oauth-entity</artifactId>
+            <version>${future.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-system-entity</artifactId>
+            <version>${future.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.future</groupId>
+            <artifactId>future-permission-entity</artifactId>
+            <version>${future.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <!--        <dependency>-->
+<!--            <groupId>com.future</groupId>-->
+<!--            <artifactId>future-file-api</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
+</project>

@@ -1,0 +1,49 @@
+spring:
+  application:
+    # 应用名称
+    name: future-agent
+  mvc:
+    servlet:
+      #  启动之后立即加载servlet
+      load-on-startup: 0
+  main:
+  #解决bean重复定义的。设置为true时，后定义的bean会覆盖之前定义的相同名称的bean
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  profiles:
+    active: @profiles.active@
+  cloud:
+    nacos:
+      username: ${nacos.username}
+      password: ${nacos.password}
+      discovery:
+        # 服务注册地址
+        server-addr: @nacos.server@
+        group: @nacos.discovery.group@
+        namespace: @nacos.namespace@
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yaml
+        group: @nacos.config.group@
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        extension-configs:
+          - # 数据源及Redis配置
+            data-id: datasource-agent.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - # 静态资源配置
+            data-id: resources.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - # 系统配置
+            data-id: system-config.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - # 框架中间件配置
+            data-id: frame-config.yaml
+            group: DEFAULT_GROUP
+            refresh: true
+          - # 日志配置
+            data-id: logger.yaml
+            group: DEFAULT_GROUP
+            refresh: true
