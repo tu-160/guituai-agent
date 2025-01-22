@@ -155,6 +155,10 @@
                 <ai.server.host>http://127.0.0.1:9380</ai.server.host>
                 <ai.reasoning.host>http://127.0.0.1:9997</ai.reasoning.host>
             </properties>
+            <activation>
+                <!-- 默认环境 -->
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
         <profile>
             <id>dev</id>
@@ -172,10 +176,6 @@
                 <ai.server.host>http://172.20.200.199:9380</ai.server.host>
                 <ai.reasoning.host>http://175.178.39.232:8062</ai.reasoning.host>
             </properties>
-            <activation>
-                <!-- 默认环境 -->
-                <activeByDefault>true</activeByDefault>
-            </activation>
         </profile>
         <profile>
             <id>prod</id>
