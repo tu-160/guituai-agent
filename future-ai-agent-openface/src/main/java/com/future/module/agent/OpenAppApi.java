@@ -43,6 +43,13 @@ public interface OpenAppApi {
     @GetMapping("/v1/api/conversation/{conversation_id}")
     AgentApiResult getConversation(@PathVariable("conversation_id") String conversation_id, @RequestParam(value = "api_token") String api_token);
 
+    @GetMapping("/v1/api/agents/sessions")
+    AgentApiResult getAgentSessions(@RequestParam(value = "agent_id") String agent_id, @RequestParam(value = "conversation_id") String conversation_id);
 
+    @DeleteMapping("/v1/api/rm")
+    AgentApiResult rmToken(@RequestParam(value = "tokens") String[] tokens);
+
+    @DeleteMapping("/v1/api/delete/sessions")
+    AgentApiResult rmSessions(@RequestBody JSONObject ids);
 
 }

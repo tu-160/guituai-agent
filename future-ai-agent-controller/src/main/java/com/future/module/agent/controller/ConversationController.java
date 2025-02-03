@@ -31,10 +31,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.netty.http.client.HttpClient;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -206,6 +203,30 @@ public class ConversationController implements ConversationApi {
         List<UserConversationEntity> userConversationAll = conversationService.getUserConversationAll(UserProvider.getLoginUserId(), dialog_id);
 //        AgentApiResult agentApiResult = openConversationApi.listConversation(dialog_id);
         return ActionResult.success(userConversationAll);
+    }
+
+    @Operation(summary = "历史对话列表")
+    @PostMapping("/sessions")
+    public ActionResult getAgentSessions(@RequestParam String dialog_id, @RequestParam String conversation_id) {
+        AgentApiResult userConversationAll = openAppApi.getAgentSessions(dialog_id, conversation_id);
+        if(userConversationAll.getCode() == 0) {
+            ArrayList arr = (ArrayList)userConversationAll.getData();
+            for(int i=0; i < arr.size(); i++) {
+               LinkedHashMap link = (LinkedHashMap) arr.get(i);
+               LinkedHashMap message = (LinkedHashMap) ((ArrayList)link.get("message")).get(((ArrayList)link.get("message")).size() - 1);
+               link.put("name", message.get("content"));
+            }
+        }
+        return ActionResult.success(userConversationAll);
+    }
+
+    @Operation(summary = "对话删除")
+    @PostMapping("/rm/session")
+    public ActionResult rmSession(@RequestParam String[] ids) {
+        JSONObject params = new JSONObject();
+        params.put("ids", ids);
+        AgentApiResult agentApiResult = openAppApi.rmSessions(params);
+        return AgentApiResult.cActionResult(agentApiResult);
     }
 
     @Operation(summary = "对话删除")

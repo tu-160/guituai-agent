@@ -106,7 +106,7 @@ public class ConversationServiceImpl extends SuperServiceImpl<UserConversationMa
                 .eq(UserConversationEntity::getDialogId, dialog_id);
         boolean remove = this.remove(queryWrapper);
         if(!remove){
-            throw new DataException(MsgCode.FA003.get());
+//            throw new DataException(MsgCode.FA003.get());
         }
     }
 
