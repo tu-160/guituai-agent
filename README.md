@@ -7,6 +7,13 @@
 
 # 圭图AI： 一个基于 Java、Python的 LLM（大语言模型）应用开发架构。充分发挥Java在企业应用的优势和Python在LLM上的优势，两者结合，形成面向企业级的大模型低代码应用开发框架。
 
+Github：
+   [前端](https://github.com/tu-160/guituai-agent-ui)
+   [后端](https://github.com/tu-160/guituai-agent)
+Gitee：
+   [前端](http://https://gitee.com/dabanzong/guituai-agent-ui)
+   [后端](https://gitee.com/dabanzong/guituai-agent)
+
 ---
 
 ## 圭图AI是什么？
