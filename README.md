@@ -1,12 +1,12 @@
-<h4 align="right"><a href="./readme.md">English</a> | <strong>简体中文</strong> | <a href="./readme_en.md">English</a></h4>
-
 <p align="center">
-    圭图AI
+  <a href="./README.md">English</a> |
+  <a href="./README_zh.md">简体中文</a> |
+  <a href="./README_ja.md">日本語</a>
 </p>
 
 
 
-# Agents-Flex： 一个基于 Java 的 LLM（大语言模型）应用开发框架。
+# 圭图AI： 一个基于 Java、Python的 LLM（大语言模型）应用开发平台。
 
 ---
 
