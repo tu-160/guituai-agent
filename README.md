@@ -128,12 +128,7 @@
 
 
 
-## 交流群
-
-![](./docs/assets/images/wechat-group.png)
+## 交流微信
 
 
 
-## 模块构成
-
-![](./docs/assets/images/modules.jpg)
