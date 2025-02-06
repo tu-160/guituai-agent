@@ -45,6 +45,19 @@
 
 ![输入图片说明](https://github.com/tu-160/guituai-agent/blob/main/docs/20250206203907.png)
 
+![输入图片说明](https://github.com/tu-160/guituai-agent/blob/main/docs/20250206203932.png)
+
+![输入图片说明](https://github.com/tu-160/guituai-agent/blob/main/docs/20250206204012.png)
+
+![输入图片说明](https://github.com/tu-160/guituai-agent/blob/main/docs/20250206204044.png)
+
+![输入图片说明](https://github.com/tu-160/guituai-agent/blob/main/docs/20250206204103.png)
+
+![输入图片说明](https://github.com/tu-160/guituai-agent/blob/main/docs/20250206204119.png)
+
+![输入图片说明](https://github.com/tu-160/guituai-agent/blob/main/docs/20250206204136.png)
+
+
 
 ## 生态支持
 
