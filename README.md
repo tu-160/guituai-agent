@@ -43,7 +43,9 @@
 
 ### **部分系统截图**
 
-
+<div align="center" style="margin-top:20px;margin-bottom:20px;">
+<img src="https://gitee.com/dabanzong/guituai-agent/blob/main/docs/20250206203907.png" width="350"/>
+</div>
 
 
 ## 生态支持
