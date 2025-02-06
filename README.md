@@ -43,7 +43,7 @@
 
 ### **部分系统截图**
 
-![输入图片说明](https://gitee.com/dabanzong/guituai-agent/blob/main/docs/20250206203907.png)
+![输入图片说明](https://github.com/tu-160/guituai-agent/blob/main/docs/20250206203907.png)
 
 
 ## 生态支持
