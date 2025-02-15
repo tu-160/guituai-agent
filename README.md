@@ -25,7 +25,7 @@
 
 5. **促进创新**：鼓励团队成员探索新技术的同时，也保障了现有系统的稳定运行。这种平衡促进了持续的技术创新，有助于企业在竞争中保持领先地位。
 
-综上所述，这种基于Java和Python的LLM应用开发架构不仅继承了两者的优点，还创造出了一个新的开发范式，使企业能够在保证系统稳定性和安全性的同时，享受人工智能带来的便利和效率提升，从而更好地适应市场变化，推动业务增长。
+
 
 ## 项目地址
 
@@ -35,12 +35,15 @@
 
 后端地址：[https://github.com/tu-160/guituai-agent](https://github.com/tu-160/guituai-agent)
 
+低代码基础服务：[https://github.com/tu-160/guituai-cloud](https://github.com/tu-160/guituai-cloud)
+
 ### gitee地址
 
 前端地址：[https://gitee.com/dabanzong/guituai-agent-ui](https://gitee.com/dabanzong/guituai-agent-ui)
 
 后端地址：[https://gitee.com/dabanzong/guituai-agent](https://gitee.com/dabanzong/guituai-agent)
 
+低代码基础服务：[https://gitee.com/dabanzong/guituai-cloud](https://gitee.com/dabanzong/guituai-cloud)
 
 
 ## 技术栈
