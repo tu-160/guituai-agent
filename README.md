@@ -54,6 +54,9 @@
 - 缓存数据库：[redis](https://github.com/redis/redis/)
 
 
+### 集成（鸣谢）
+- [RAGFlow](https://github.com/infiniflow/ragflow): 是一款基于深度文档理解构建的开源 RAG 引擎。
+
 ## 商业合作
 针对上面技术，我们开发了一套商业级软件，支持代理 & 私有化部署！
 
