@@ -190,7 +190,7 @@
                 <logstash.address>127.0.0.1:4560</logstash.address>
                 <sentinel.dashboard>127.0.0.1:30098</sentinel.dashboard>
                 <ai.server.host>http://127.0.0.1:9380</ai.server.host>
-                <ai.reasoning.host>http://xinference:9997</ai.reasoning.host>
+                <ai.reasoning.host>http://127.0.0.1:9997</ai.reasoning.host>
             </properties>
         </profile>
     </profiles>
