@@ -152,8 +152,8 @@
                 <nacos.namespace>future-dev</nacos.namespace>
                 <logstash.address>127.0.0.1:4560</logstash.address>
                 <sentinel.dashboard>127.0.0.0:30098</sentinel.dashboard>
-                <ai.server.host>http://192.168.17.9:9380</ai.server.host>
-                <ai.reasoning.host>http://192.168.17.9:9997</ai.reasoning.host>
+                <ai.server.host>http://192.168.17.9:5685</ai.server.host>
+                <ai.reasoning.host>http://192.168.17.9:8478</ai.reasoning.host>
             </properties>
             <activation>
                 <!-- 默认环境 -->
@@ -173,24 +173,24 @@
                 <nacos.namespace>1e017954-eb52-4d21-a843-0286d9013cf3</nacos.namespace>
                 <logstash.address>127.0.0.1:4560</logstash.address>
                 <sentinel.dashboard>172.20.200.33:30098</sentinel.dashboard>
-                <ai.server.host>http://172.20.200.199:9380</ai.server.host>
-                <ai.reasoning.host>http://457.254.58.457:8056</ai.reasoning.host>
+                <ai.server.host>http://172.20.200.199:5685</ai.server.host>
+                <ai.reasoning.host>http://457.254.58.457:8478</ai.reasoning.host>
             </properties>
         </profile>
         <profile>
             <id>prod</id>
             <properties>
                 <profiles.active>prod</profiles.active>
-                <nacos.server>127.0.0.1:8848</nacos.server>
+                <nacos.server>nacos:8848</nacos.server>
                 <nacos.discovery.group>DEFAULT_GROUP</nacos.discovery.group>
                 <nacos.config.group>DEFAULT_GROUP</nacos.config.group>
                 <nacos.username>nacos</nacos.username>
-                <nacos.password>nacos</nacos.password>
-                <nacos.namespace>future-agent</nacos.namespace>
+                <nacos.password>nacos2025</nacos.password>
+                <nacos.namespace>future-dev</nacos.namespace>
                 <logstash.address>127.0.0.1:4560</logstash.address>
                 <sentinel.dashboard>127.0.0.1:30098</sentinel.dashboard>
-                <ai.server.host>http://127.0.0.1:9380</ai.server.host>
-                <ai.reasoning.host>http://127.0.0.1:9997</ai.reasoning.host>
+                <ai.server.host>http://ragserver:5685</ai.server.host>
+                <ai.reasoning.host>http://aiinfer:8478</ai.reasoning.host>
             </properties>
         </profile>
     </profiles>
