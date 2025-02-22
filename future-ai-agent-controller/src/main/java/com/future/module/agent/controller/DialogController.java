@@ -95,7 +95,13 @@ public class DialogController implements DialogApi {
         AgentApiResult dialog = openDialogApi.getDialog(dialog_id);
         // 预设问题
         List<String> agentMessage = conversationService.getAgentMessage(dialog_id);
-        Map<String, Object> dataMap = JsonUtil.entityToMap(dialog.getData());
+
+        Map<String, Object> dataMap = null;
+        if(dialog.getCode()==102 && dialog.getMessage().equals("Dialog not found!")) {
+            dataMap = new HashMap<String, Object>();
+        } else {
+            dataMap = JsonUtil.entityToMap(dialog.getData());
+        }
         dataMap.put("default_question",agentMessage);
         dialog.setData(dataMap);
         return AgentApiResult.cActionResult(dialog);
@@ -118,11 +124,11 @@ public class DialogController implements DialogApi {
         AgentApiResult data = openDialogApi.getDialogList(jsonObject);
         Object pub = openDialogApi.getDialogPublicList().getData();
 
-        AgentApiResult agent = apenCanvasApi.getCanvasList(jsonObject);
-        if(data.getCode() == 0 && agent.getCode() == 0) {
-            ((ArrayList) agent.getData()).forEach(map -> ((Map) map).put("name", ((Map) map).get("title")));
-            ((ArrayList) data.getData()).addAll((ArrayList) agent.getData());
-        }
+//        AgentApiResult agent = apenCanvasApi.getCanvasList(jsonObject);
+//        if(data.getCode() == 0 && agent.getCode() == 0) {
+//            ((ArrayList) agent.getData()).forEach(map -> ((Map) map).put("name", ((Map) map).get("title")));
+//            ((ArrayList) data.getData()).addAll((ArrayList) agent.getData());
+//        }
 
         Map join = new HashMap();
         join.put("public_data", pub);
