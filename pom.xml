@@ -152,8 +152,8 @@
                 <nacos.namespace>future-dev</nacos.namespace>
                 <logstash.address>127.0.0.1:4560</logstash.address>
                 <sentinel.dashboard>127.0.0.0:30098</sentinel.dashboard>
-                <ai.server.host>http://192.168.17.9:5685</ai.server.host>
-                <ai.reasoning.host>http://192.168.17.9:8478</ai.reasoning.host>
+                <ai.server.host>http://127.0.0.1:5685</ai.server.host>
+                <ai.reasoning.host>http://127.0.0.1:8478</ai.reasoning.host>
             </properties>
             <activation>
                 <!-- 默认环境 -->
